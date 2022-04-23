@@ -35,7 +35,7 @@ public class Jobs_GET{
 			Response response = httpRequest.request(Method.GET, "/Jobs");
 			
 			String responseBody = response.body().asString();
-			System.out.println("Response Body:" +responseBody);
+			System.out.println("Response Body: " +responseBody);
 			//status code validation
 			int statuscode = response.getStatusCode();
 			System.out.println("Response Status code:"+statuscode);
